@@ -11,7 +11,7 @@ typora-root-url: ../
 
 Over the last year, Overmind has gotten quite popular. It is now the dominant open-source bot running on the public servers, especially on `shard2`:
 
-![](/assets/img/Screen-Shot-2019-01-02-at-11.34.44-AM.png){:class="img-fluid rounded z-depth-1"}
+![](/assets/img/Screen-Shot-2019-01-02-at-11.34.44-AM.png){:class="img-fluid rounded z-depth-0"}
 
 Having so many players running my script near me is a cool experience, and it gave me a thematically-fitting direction for Overmind's final evolution: to become a true universal hivemind by assimilating other players.
 
@@ -39,7 +39,7 @@ console.log('' + Foo);
 
 The Assimilator uses this behavior to generate a checksum of the @assimilationLocked portions of the script using a [sha256](https://github.com/bencbartlett/Overmind/blob/master/src/algorithms/sha256.ts) cryptographic hash. Whenever I deploy code to the main server, a checksum for my version of the code is generated and stored in my memory along with all unique hashes from the last 1 million ticks. If a player is assimilated, then every 1000 ticks, Overmind will send 100 energy to one of my terminals, with a hash of the current codebase as the description. If I receive a checksum which matches that of a recent valid version, I reply on the following tick with a unique clearance key valid for the next 1000 ticks transmitted through public memory:
 
-![Screen Shot 2019-01-02 at 12.29.43 PM](/assets/img/Screen-Shot-2019-01-02-at-12.29.43-PM.png){:class="img-fluid rounded z-depth-1"}
+![Screen Shot 2019-01-02 at 12.29.43 PM](/assets/img/Screen-Shot-2019-01-02-at-12.29.43-PM.png){:class="img-fluid rounded z-depth-0"}
 
 The assimilator looks at the master ledger of clearance codes to determine which players are trusted. In the future, clearance keys will be used to generate flag names based on the tick they were created. Only flags matching the correct naming pattern will be uploaded to the master ledger of directives shared among the hivemind. This allows players to manually place their own directives which only their creeps will respond to (for fighting their own personal skirmishes), as well as for the Overmind to automatically place directives which all assimilants will see.
 
@@ -73,7 +73,7 @@ This new cache-friendly architecture has been running on the public servers for 
 
 A while ago, I started rewriting the [Visualizer](https://github.com/bencbartlett/Overmind/blob/master/src/visuals/Visualizer.ts) system for Overmind to be better looking, better organized, and to display more useful information. Here's a screenshot of what it looks like at the moment:
 
-![Screen-Shot-2018-12-20-at-5.25.45-PM](/assets/img/Screen-Shot-2018-12-20-at-5.25.45-PM.png){:class="img-fluid rounded z-depth-1"}
+![Screen-Shot-2018-12-20-at-5.25.45-PM](/assets/img/Screen-Shot-2018-12-20-at-5.25.45-PM.png){:class="img-fluid rounded z-depth-0"}
 
 I generally enjoy writing visualization code, but the part I had the most fun making was efficiently rendering the Overmind logo using room visuals. If you've read any of my non-Screeps posts, you probably know that I [really](https://bencbartlett.wordpress.com/2017/07/11/particle-in-a-fidget-spinner/) [like](https://bencbartlett.wordpress.com/2017/07/11/first-blog-post/) [Mathematica](https://bencbartlett.wordpress.com/2017/07/11/how-to-mathematica-a-practical-guide/). I made a Mathematica notebook to disassemble the logo image into color-quantized components, and used the [Ramer-Douglas-Peuker algorithm](https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm) to parameterize the perimeter of each component into a form that `RoomVisual.poly()` can accept. This algorithm finds a minimum number of points necessary to outline a shape to within a specified tolerance. The (relatively) small point count means that the logo is actually quite cheap to render -- about 1-2 CPU per tick. (And of course, visuals get disabled when the bucket drops below 9000.)
 

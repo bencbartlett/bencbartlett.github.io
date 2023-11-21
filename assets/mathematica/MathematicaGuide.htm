@@ -1,0 +1,1747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+        "HTMLFiles/xhtml-math11-f.dtd">
+
+<!-- Created with the Wolfram Language for Students - Personal Use Only : www.wolfram.com -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>
+  MathematicaGuide (the Wolfram Language for Students - Personal Use Only : www.wolfram.com)
+ </title>
+ <link href="HTMLFiles/MathematicaGuide.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<p class="Title">
+ How to Mathematica
+</p>
+
+
+
+<p class="Subtitle">
+ A practical guide for using Mathematica in problem sets
+</p>
+
+
+
+<p class="Subsubtitle">
+ Ben Bartlett - Ruddock &lsquo;17<br />2017 Ruddock Upperclassman Workshop: 24 April, 9pm
+</p>
+
+
+
+<p class="Chapter">
+ Contents:
+</p>
+
+
+
+<p class="Item">
+ 0. Wolfram documentation
+</p>
+
+
+
+<p class="Item">
+ 1. Formatting a notebook
+</p>
+
+
+
+<p class="Subitem">
+ Cell styles
+</p>
+
+
+
+<p class="Subitem">
+ Cell styles as folders
+</p>
+
+
+
+<p class="Item">
+ Math input
+</p>
+
+
+
+<p class="Subitem">
+ Suppressing output
+</p>
+
+
+
+<p class="Subitem">
+ Greek characters
+</p>
+
+
+
+<p class="Subitem">
+ Simple operator input
+</p>
+
+
+
+<p class="Subitem">
+ More complex operator input
+</p>
+
+
+
+<p class="Item">
+ 2. Prerequisites: variables, functions, rule replacements, prefixes/suffixes, and lists
+</p>
+
+
+
+<p class="Subitem">
+ Variables
+</p>
+
+
+
+<p class="Subsubitem">
+ Using results from previous cells
+</p>
+
+
+
+<p class="Subitem">
+ Functions
+</p>
+
+
+
+<p class="Subsubitem">
+ Pattern matching in functions
+</p>
+
+
+
+<p class="Subitem">
+ Rule replacements
+</p>
+
+
+
+<p class="Subitem">
+ Prefixes and suffixes
+</p>
+
+
+
+<p class="Subitem">
+ Lists
+</p>
+
+
+
+<p class="Item">
+ 3. Commonly-used things in Mathematica
+</p>
+
+
+
+<p class="Subitem">
+ Copy results to <span><span><img src="HTMLFiles/MathematicaGuide_1.png" alt="MathematicaGuide_1.png" width="31" height="19" style="vertical-align:middle" /></span></span>
+</p>
+
+
+
+<p class="Subitem">
+ Simplifying expressions with FullSimplify[]
+</p>
+
+
+
+<p class="Subitem">
+ Solving equations with Solve[]
+</p>
+
+
+
+<p class="Subitem">
+ Solving differential equations with DSolve[]
+</p>
+
+
+
+<p class="Subitem">
+ Free-form and Wolfram|Alpha input
+</p>
+
+
+
+<p class="Subsubitem">
+ Should I use Mathematica as a Wolfram|Alpha client?
+</p>
+
+
+
+<p class="Subsubitem">
+ Using free-form input in standard input cells
+</p>
+
+
+
+<p class="Subitem">
+ Working with units
+</p>
+
+
+
+<p class="Subitem">
+ Solving numerically with NSolve[] and NDSolve[]
+</p>
+
+
+
+<p class="Subsubitem">
+ Application: using boundary conditions
+</p>
+
+
+
+<p class="Subitem">
+ Working with vectors and matrices
+</p>
+
+
+
+<p class="Subitem">
+ Fitting functions to data
+</p>
+
+
+
+<p class="Subsubitem">
+ LinearModelFit[]
+</p>
+
+
+
+<p class="Subsubitem">
+ NonlinearModelFit[]
+</p>
+
+
+
+<p class="Item">
+ 4. Plotting relationships and data in Mathematica 
+</p>
+
+
+
+<p class="Subitem">
+ Plotting symbolic relationships with Plot[]
+</p>
+
+
+
+<p class="Subitem">
+ Plotting lists with ListPlot[]
+</p>
+
+
+
+<p class="Subitem">
+ Other common types of plots
+</p>
+
+
+
+<p class="Subitem">
+ Using Manipulate[]
+</p>
+
+
+
+<p class="Text">
+ <span class="InputInline"><span><img src="HTMLFiles/MathematicaGuide_2.gif" alt="MathematicaGuide_2.gif" width="612" height="795" style="vertical-align:middle" /></span></span>
+</p>
+
+
+
+<p class="Section">
+ 0. Wolfram documentation
+</p>
+
+
+
+<p class="Text">
+ Mathematica has incredibly well-documented functionality. Typing any command in an input cell and hovering over the text with your mouse will bring up a dropdown menu linking to the documentation for that command. The <span><a href="https://reference.wolfram.com/language/"><span class="HyperlinkInline">Wolfram Language Documentation Center</span></a></span> also has a series of excellent video tutorials that cover a lot of introductory topics to using Mathematica.
+</p>
+
+
+
+<p class="Section">
+ 1. Formatting a notebook
+</p>
+
+
+
+<p class="Text">
+ Mathematica is frequently used as a scratchpad for calculations, producing messy output that needs to be inserted into a more cleanly typed problem set. However, Mathematica documents can formatted with text, images, and other media to produce well-organized content that is suitable to turn in as a problem set!
+</p>
+
+
+
+<p class="Subsection">
+ Cell styles
+</p>
+
+
+
+<p class="Text">
+ Using Format -&gt; Style, (Alt + number on Windows or Cmd + number on Mac) you can change the style of a cell to make a title, subtitle, section, subsection, or text. There are a lot of options for this, but the only ones really worth remembering are (replace Alt with Cmd for Mac):
+</p>
+
+
+
+<p class="Item">
+ Title: Alt + 1 (Cmd + 1 on Mac)
+</p>
+
+
+
+<p class="Item">
+ Chapter: Alt + 2
+</p>
+
+
+
+<p class="Item">
+ Section: Alt + 4
+</p>
+
+
+
+<p class="Item">
+ Subsection: Alt + 5
+</p>
+
+
+
+<p class="Item">
+ Text: Alt + 7
+</p>
+
+
+
+<p class="Subsubsection">
+ Cell styles as folders
+</p>
+
+
+
+<p class="Text">
+ Mathematica also groups cells by descending section order. This allows you to collapse entire sections that you don&rsquo;t need to look at. If you hover over the extended right bracket &ldquo;]&rdquo; spanning this section, it will turn blue. Double click it to collapse the section, and double click again to expand it again.
+</p>
+
+
+
+<p class="Subsubsection">
+ Try it yourself
+</p>
+
+
+
+<p class="Text">
+ Try changing the style of this cell to a subsection!
+</p>
+
+
+
+<p class="Subsection">
+ Math input
+</p>
+
+
+
+<p class="Text">
+ One of the first things that turns new people off from Mathematica is the ugly way that expressions can look when you write them down. For example,
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_3.png" alt="MathematicaGuide_3.png" width="791" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_4.png" alt="MathematicaGuide_4.png" width="13" height="33" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ is not the most easily readable expression. However, using the correct keyboard input, you can write this much more nicely:
+</p>
+
+
+
+<p class="Input">
+ <a id="Ramanujanxapproximationxofxpi"></a>
+ <img src="HTMLFiles/MathematicaGuide_5.png" alt="MathematicaGuide_5.png" width="231" height="45" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_6.png" alt="MathematicaGuide_6.png" width="13" height="33" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ If you&rsquo;re just starting out using Mathematica, you might find the math palettes (Palettes -&gt; Basic Math Assistant) useful.
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_7.gif" alt="MathematicaGuide_7.gif" width="276" height="427" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_8.gif" alt="MathematicaGuide_8.gif" width="276" height="427" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Hovering over any of the buttons should display the keyboard shortcut to enter that expression in Mathematica. Learn these! They&rsquo;ll save a lot of time in the future.
+</p>
+
+
+
+<p class="Text">
+ There is a lot of functionality here, but as usual with this guide, I&rsquo;ll cover the ones most useful to know.
+</p>
+
+
+
+<p class="Subsubsection">
+ Suppressing output
+</p>
+
+
+
+<p class="Text">
+ When you evaluate a cell with Shift+enter, you&rsquo;ll see an input and an output. Sometimes, for example if you&rsquo;re defining a block of variables, you don&rsquo;t need this output. In this case, you can suppress the output with a semicolon.
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_9.png" alt="MathematicaGuide_9.png" width="116" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_10.png" alt="MathematicaGuide_10.png" width="8" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_11.png" alt="MathematicaGuide_11.png" width="132" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubsection">
+ Greek characters
+</p>
+
+
+
+<p class="Text">
+ Any Greek character can be input into a document (in text mode or input mode) by typing esc+letter+esc. For example, esc+p+esc inputs &pi;, esc+G+esc gives &Gamma;, and esc+b+esc is &beta;. This alone can easily reduce a lot of the ugliness associated with Mathematica syntax in a notebook. A few other useful similar shortcuts:
+</p>
+
+
+
+<p class="Item">
+ esc + ii + esc: <span class="doublestruck">i</span> (imaginary number)
+</p>
+
+
+
+<p class="Item">
+ esc + ee + esc: <span class="doublestruck">e</span> (number e)
+</p>
+
+
+
+<p class="Item">
+ esc + inf + esc: &infin;
+</p>
+
+
+
+<p class="Subsubsection">
+ Simple operator input
+</p>
+
+
+
+<p class="Text">
+ Many common operators can be written in Mathematica using Ctrl+key (on both Windows and Mac - not Cmd). These are typically pretty easy to remember:
+</p>
+
+
+
+<p class="Item">
+ Ctrl + / gives a fraction: <span><span><img src="HTMLFiles/MathematicaGuide_12.png" alt="MathematicaGuide_12.png" width="19" height="37" style="vertical-align:middle" /></span></span>
+</p>
+
+
+
+<p class="Subitem">
+ Aside: multiplication is done by *, but can be implicitly used by simply putting a space between two variables
+</p>
+
+
+
+<p class="Item">
+ Ctrl + 2 gives a square root: <span><span><img src="HTMLFiles/MathematicaGuide_13.png" alt="MathematicaGuide_13.png" width="24" height="22" style="vertical-align:middle" /></span></span>
+</p>
+
+
+
+<p class="Item">
+ Ctrl + 6 gives an exponent: <span><span><img src="HTMLFiles/MathematicaGuide_14.png" alt="MathematicaGuide_14.png" width="13" height="19" style="vertical-align:middle" /></span></span>
+</p>
+
+
+
+<p class="Item">
+ Ctrl + 9 opens an inline math cell (only in text mode!): <span><span><img src="HTMLFiles/MathematicaGuide_15.png" alt="MathematicaGuide_15.png" width="50" height="19" style="vertical-align:middle" /></span></span>
+</p>
+
+
+
+<p class="Item">
+ Ctrl + - creates a subscript: <span><span><img src="HTMLFiles/MathematicaGuide_16.png" alt="MathematicaGuide_16.png" width="10" height="19" style="vertical-align:middle" /></span></span>
+</p>
+
+
+
+<p class="Subitem">
+ As a general rule, I wouldn&rsquo;t recommend naming any of your variables with subscripts, since Mathematica has inconsistent handling of variables with subscripts in them. I always convert <span><span><img src="HTMLFiles/MathematicaGuide_17.png" alt="MathematicaGuide_17.png" width="9" height="19" style="vertical-align:middle" /></span></span> to &ldquo;xi&rdquo; in my code.
+</p>
+
+
+
+<p class="Text">
+ As usual, there are many others, but these are some of the most commonly used ones.
+</p>
+
+
+
+<p class="Subsubsection">
+ More complex operator input
+</p>
+
+
+
+<p class="Text">
+ Mathematica also has a lot of &ldquo;template operators&rdquo; that typeset nicely in a notebook. These are typically entered by esc + (some sensible shortcut) + t + esc. For example:
+</p>
+
+
+
+<p class="Item">
+ esc + intt + esc is an indefinite integral: <span><span>&int;&#9632;<span class="doublestruck">d</span>&#9633;</span></span>
+</p>
+
+
+
+<p class="Item">
+ esc + dintt + esc is a definite integral: <span><span><img src="HTMLFiles/MathematicaGuide_18.png" alt="MathematicaGuide_18.png" width="64" height="36" style="vertical-align:middle" /></span></span>
+</p>
+
+
+
+<p class="Item">
+ esc + sumt + esc is a sum: <span><span><img src="HTMLFiles/MathematicaGuide_19.png" alt="MathematicaGuide_19.png" width="30" height="46" style="vertical-align:middle" /></span></span>
+</p>
+
+
+
+<p class="Item">
+ esc + prodt + esc is a product: <span><span><img src="HTMLFiles/MathematicaGuide_20.png" alt="MathematicaGuide_20.png" width="30" height="46" style="vertical-align:middle" /></span></span>
+</p>
+
+
+
+<p class="Text">
+ These can be nested too! For example,
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_21.png" alt="MathematicaGuide_21.png" width="97" height="45" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_22.png" alt="MathematicaGuide_22.png" width="8" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Some operators aren&rsquo;t templated, but are entered in a similar way:
+</p>
+
+
+
+<p class="Item">
+ esc + dd + esc is a differential symbol: <span class="doublestruck">d</span>
+</p>
+
+
+
+<p class="Subitem">
+ This one is tricky - this isn&rsquo;t the same as D[expr, var]. For that, you need to use the &part; symbol
+</p>
+
+
+
+<p class="Item">
+ esc + pd + esc is a partial differential symbol: &part;
+</p>
+
+
+
+<p class="Subitem">
+ You can use this in place of D[expr, var]:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_23.png" alt="MathematicaGuide_23.png" width="32" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_24.png" alt="MathematicaGuide_24.png" width="26" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubsection">
+ Try it yourself
+</p>
+
+
+
+<p class="Text">
+ Try entering the <span><span><a href="#Ramanujanxapproximationxofxpi"><span><span class="HyperlinkInline">Ramanujan approximation of &pi;</span></span></a></span></span> in a new cell below.
+</p>
+
+
+
+<p class="Section">
+ 2. Prerequisites: variables, functions, rule replacements, prefixes/suffixes, and lists
+</p>
+
+
+
+<p class="Text">
+ Mathematica has most data structures of other programming languages, but for use as a calculation tool for non-CS problem sets, there&rsquo;s only a few that you have to know.
+</p>
+
+
+
+<p class="Subsection">
+ Variables
+</p>
+
+
+
+<p class="Text">
+ Variables in Mathematica can have two &ldquo;types&rdquo; (note that Mathematica is completely untyped, so I use this word in the loosest sense): symbolic or defined. Symbolic variables will always be blue or green in the document (they&rsquo;re green if they&rsquo;re used for evaluating something, like in plotting), while defined variables, which can be either expressions of symbolic variables or numbers, are black. You can clear defined variables using Clear[var1, var2, var3...]
+</p>
+
+
+
+<p class="Subsubsection">
+ Using results from previous cells
+</p>
+
+
+
+<p class="Text">
+ You can use previously computed results either by storing them to a variable (usually preferred) or by using the % operator, which gets the last Out[] result computed in the notebook. Note: this is the last value computed, not necessarily the previous cell!
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_25.png" alt="MathematicaGuide_25.png" width="28" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_26.png" alt="MathematicaGuide_26.png" width="8" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_27.png" alt="MathematicaGuide_27.png" width="28" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_28.png" alt="MathematicaGuide_28.png" width="16" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Using %%...% gets the (number of %&rsquo;s) previous cell:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_29.png" alt="MathematicaGuide_29.png" width="16" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_30.png" alt="MathematicaGuide_30.png" width="8" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_31.png" alt="MathematicaGuide_31.png" width="23" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_32.png" alt="MathematicaGuide_32.png" width="8" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ And using %n or Out[n] uses the n&rsquo;th output:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_33.png" alt="MathematicaGuide_33.png" width="16" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_34.png" alt="MathematicaGuide_34.png" width="8" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Subsection">
+ Functions
+</p>
+
+
+
+<p class="Text">
+ Built-in Mathematica functions always start with a capital character. You can also define your own functions. Mathematica admits two types of &ldquo;functions&rdquo;. You can define variables to be &ldquo;expressions&rdquo; of symbolic variables with an = symbol, or you can define formal functions that use lazy evaluation using a transformation rule on a symbol (x_, for example), and a := symbol. For example:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_35.gif" alt="MathematicaGuide_35.gif" width="200" height="60" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_36.png" alt="MathematicaGuide_36.png" width="30" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_37.gif" alt="MathematicaGuide_37.gif" width="687" height="39" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_38.png" alt="MathematicaGuide_38.png" width="30" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubsection">
+ Pattern matching in functions
+</p>
+
+
+
+<p class="Text">
+ You can use existing symbols to create inferred functional patterns. For example, if I wanted to define the tensor product of two vectors (typically denoted by KroneckerProduct[v1, v2]) using the standard &otimes; notation, I could use:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_39.png" alt="MathematicaGuide_39.png" width="239" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_40.gif" alt="MathematicaGuide_40.gif" width="189" height="39" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_41.png" alt="MathematicaGuide_41.png" width="47" height="32" style="vertical-align:middle" />
+</p>
+
+<p class="Subsection">
+ Rule replacements
+</p>
+
+
+
+<p class="Text">
+ Mathematica is a functionally-styled programming language, and has nice rule replacements. You can replace any symbol in an expression with another expression by using a rule replacement: &ldquo;/.&rdquo;
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_42.png" alt="MathematicaGuide_42.png" width="65" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_43.png" alt="MathematicaGuide_43.png" width="8" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_44.gif" alt="MathematicaGuide_44.gif" width="151" height="39" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_45.png" alt="MathematicaGuide_45.png" width="30" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Subsection">
+ Prefixes and suffixes
+</p>
+
+
+
+<p class="Text">
+ These aren&rsquo;t terribly important, but can save you time typing and make your input look more nicely formatted. You can add a prefix or suffix to any function by using the @ and // operators, respectively. These work with any function that takes only a single argument. For example:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_46.png" alt="MathematicaGuide_46.png" width="28" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_47.png" alt="MathematicaGuide_47.png" width="55" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_48.png" alt="MathematicaGuide_48.png" width="40" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_49.png" alt="MathematicaGuide_49.png" width="55" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_50.png" alt="MathematicaGuide_50.png" width="188" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_51.png" alt="MathematicaGuide_51.png" width="53" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Subsection">
+ Lists
+</p>
+
+
+
+<p class="Text">
+ Lists in Mathematica are simply collections of items (that don&rsquo;t have to be of the same type) and are handled similarly to Python, with a few exceptions. They are entered using curly braces: {item1, item2, item3}. 
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_52.png" alt="MathematicaGuide_52.png" width="264" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Lists are 1-indexed (important!) and can be sliced with the [[ ;; ]] operators:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_53.png" alt="MathematicaGuide_53.png" width="71" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_54.png" alt="MathematicaGuide_54.png" width="8" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_55.png" alt="MathematicaGuide_55.png" width="103" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_56.png" alt="MathematicaGuide_56.png" width="66" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_57.png" alt="MathematicaGuide_57.png" width="135" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_58.png" alt="MathematicaGuide_58.png" width="66" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ You can also generate lists with a Table[] function:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_59.png" alt="MathematicaGuide_59.png" width="128" height="20" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_60.png" alt="MathematicaGuide_60.png" width="124" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_61.png" alt="MathematicaGuide_61.png" width="222" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_62.png" alt="MathematicaGuide_62.png" width="408" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ There are a lot of other list manipulation functions <span><a href="https://reference.wolfram.com/language/guide/ListManipulation.html"><span class="HyperlinkInline">available in the documentation</span></a></span>.
+</p>
+
+
+
+<p class="Section">
+ 3. Commonly-used things in Mathematica
+</p>
+
+
+
+<p class="Text">
+ Mathematica can be an indispensable tool for use in your problem sets. Although the language has basically everything you could ever think of built in as dedicated functions, you&rsquo;ll find yourself using a handful of functions fairly often. I&rsquo;ll cover these below.
+</p>
+
+
+
+<p class="Subsection">
+ Copy results to <span><span><img src="HTMLFiles/MathematicaGuide_63.png" alt="MathematicaGuide_63.png" width="45" height="26" style="vertical-align:middle" /></span></span>
+</p>
+
+
+
+<p class="Text">
+ If you use <span><span><img src="HTMLFiles/MathematicaGuide_64.png" alt="MathematicaGuide_64.png" width="22" height="19" style="vertical-align:middle" /></span></span> to type up your problem sets, you can copy results from Mathematica output by selecting the desired output and selecting &ldquo;Copy As -&gt; <span><span><img src="HTMLFiles/MathematicaGuide_65.png" alt="MathematicaGuide_65.png" width="33" height="19" style="vertical-align:middle" /></span></span>&quot;.
+</p>
+
+
+
+<p class="Subsection">
+ Simplifying expressions with FullSimplify[]
+</p>
+
+
+
+<p class="Text">
+ There&rsquo;s a lot of built-in simplification functions and expression manipulation functions (Expand[], Factor[], Together[], etc.), but the go-to function is always FullSimplify, which will get you the result you want about 80% of the time, anecdotally.
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_66.png" alt="MathematicaGuide_66.png" width="180" height="20" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_67.png" alt="MathematicaGuide_67.png" width="53" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_68.png" alt="MathematicaGuide_68.png" width="234" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_69.png" alt="MathematicaGuide_69.png" width="21" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ You can also use FullSimplify to verify solutions satisfy an equation
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_70.png" alt="MathematicaGuide_70.png" width="361" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_71.png" alt="MathematicaGuide_71.png" width="176" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_72.png" alt="MathematicaGuide_72.png" width="285" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_73.png" alt="MathematicaGuide_73.png" width="31" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Subsection">
+ Solving equations with Solve[]
+</p>
+
+
+
+<p class="Text">
+ Solve[] lets you solve an algebraic equation or system of equations for possible solutions. Note that when using Solve[] (or any other similar function, like NSolve, DSolve, etc), you need to use the test equality operator == rather than the assignment operator =, just like you would in Python. Solve[] gives a list of rule replacements, not a list of solutions, so if you want to assign something to a value from Solve, you need to destructure the list (First[] and Last[] are frequently helpful here) and apply the corresponding rule replacement to isolate the variable.
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_74.png" alt="MathematicaGuide_74.png" width="187" height="20" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_75.png" alt="MathematicaGuide_75.png" width="358" height="32" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_76.png" alt="MathematicaGuide_76.png" width="257" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_77.png" alt="MathematicaGuide_77.png" width="120" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_78.png" alt="MathematicaGuide_78.png" width="210" height="34" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_79.png" alt="MathematicaGuide_79.png" width="78" height="33" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_80.png" alt="MathematicaGuide_80.png" width="157" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_81.png" alt="MathematicaGuide_81.png" width="21" height="33" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_82.png" alt="MathematicaGuide_82.png" width="428" height="20" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_83.png" alt="MathematicaGuide_83.png" width="17" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Subsection">
+ Solving differential equations with DSolve[]
+</p>
+
+
+
+<p class="Text">
+ DSolve[] works very similarly to Solve[], except that it requires initial conditions in some cases. (As of Mathematica 10, there&rsquo;s also a handy function to retrieve the solutions, rather than rule replacements, from DSolve, which is the wrapper function DSolveValue[].) When typing the equations, use &lsquo; to denote derivatives with respect to the independent variable.
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_84.png" alt="MathematicaGuide_84.png" width="293" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_85.png" alt="MathematicaGuide_85.png" width="294" height="32" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_86.gif" alt="MathematicaGuide_86.gif" width="450" height="39" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_87.gif" alt="MathematicaGuide_87.gif" width="360" height="228" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_88.png" alt="MathematicaGuide_88.png" width="415" height="102" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_89.png" alt="MathematicaGuide_89.png" width="154" height="21" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_90.gif" alt="MathematicaGuide_90.gif" width="417" height="186" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_91.png" alt="MathematicaGuide_91.png" width="201" height="35" style="vertical-align:middle" />
+</p>
+
+<p class="Subsection">
+ Free-form and Wolfram|Alpha input
+</p>
+
+
+
+<p class="Text">
+ As of Mathematica 8, you can use &ldquo;free-form input&rdquo; to express what you want to do in natural language. Mathematica is generally pretty good at figuring out what you&rsquo;re trying to do. It also allows an extension of this: free-form Wolfram|Alpha input.
+</p>
+
+
+
+<p class="Text">
+ To use free-form input, press &ldquo;=&rdquo; in any blank code cell to switch it to free-form mode. Pressing &ldquo;=&rdquo; again will switch it to Wolfram|Alpha input, and pressing &ldquo;=&rdquo; a third time cycles it back to normal input. The use of both input styles is shown below.
+</p>
+
+
+
+<p class="WolframAlphaShortInput">
+ <img src="HTMLFiles/MathematicaGuide_92.gif" alt="MathematicaGuide_92.gif" width="207" height="50" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_93.png" alt="MathematicaGuide_93.png" width="23" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ In[50]:=
+</p>
+
+
+
+<p class="WolframAlphaLong">
+ integrate 5x^2 from x=2 to x=5
+</p>
+
+
+
+<p class="Print">
+ <script type="text/javascript" src="http://www.wolfram.com/cdf-player/plugin/v2.1/cdfplugin.js"></script>
+<script type="text/javascript">
+var cdf = new cdfplugin();
+cdf.embed('HTMLFiles/MathematicaGuide_94.cdf', 0, 0);
+</script>
+</p>
+
+<p class="Subsubsection">
+ Should I use Mathematica as a Wolfram|Alpha client?
+</p>
+
+
+
+<p class="Text">
+ Probably not. Mathematica can be a challenging platform to learn, and it&rsquo;s alright to use Wolfram|Alpha if you don&rsquo;t know how to do something, but, in my experience, Wolfram|Alpha stops being useful for physics problem sets around sophomore year. There are a tremendous number of things Mathematica can do that Wolfram|Alpha simply can&rsquo;t, and you will eventually see some of those things appearing in your problem sets.
+</p>
+
+
+
+<p class="Subsubsection">
+ Using free-form input in standard input cells
+</p>
+
+
+
+<p class="Text">
+ If you press Ctrl+&ldquo;=&rdquo; (on both Windows and Mac), you can enter a small portion of free-form input in a portion of a standard input cell. This is extraordinarily useful when working with units! (See later in this section for working with units.) For example,
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_95.png" alt="MathematicaGuide_95.png" width="366" height="62" style="vertical-align:middle;" usemap="#map_95" />
+<map name="map_95">
+<area shape="rect" coords="220,54,241,36" title="Dynamic[FEPrivate`FrontEndResource[WAStrings, EditLinguisticForm]]"1 meter"" nohref="" />
+<area shape="rect" coords="206,50,218,40" title="Dynamic[FEPrivate`FrontEndResource[WAStrings, EditLinguisticForm]]"1 meter"" nohref="" />
+<area shape="rect" coords="216,20,238,3" title="Dynamic[FEPrivate`FrontEndResource[WAStrings, EditLinguisticForm]]"1 coulomb"" nohref="" />
+<area shape="rect" coords="202,16,214,6" title="Dynamic[FEPrivate`FrontEndResource[WAStrings, EditLinguisticForm]]"1 coulomb"" nohref="" />
+<area shape="rect" coords="134,56,150,36" title="Dynamic[FEPrivate`FrontEndResource[WAStrings, EditLinguisticForm]]"vacuum permittivity"" nohref="" />
+<area shape="rect" coords="120,50,132,40" title="Dynamic[FEPrivate`FrontEndResource[WAStrings, EditLinguisticForm]]"vacuum permittivity"" nohref="" />
+</map>
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_96.png" alt="MathematicaGuide_96.png" width="140" height="23" style="vertical-align:middle" />
+</p>
+
+<p class="Subsection">
+ Working with units
+</p>
+
+
+
+<p class="Text">
+ Mathematica has an excellent and robust <span><a href="https://reference.wolfram.com/language/guide/Units.html"><span class="HyperlinkInline">units system</span></a></span>. The formal command for using units is Quantity[]:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_97.png" alt="MathematicaGuide_97.png" width="251" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_98.png" alt="MathematicaGuide_98.png" width="37" height="19" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ However, the easiest way to input units, and the way I almost always use, is with free-form input using Ctrl+&ldquo;=&rdquo;.
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_99.png" alt="MathematicaGuide_99.png" width="37" height="19" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_100.png" alt="MathematicaGuide_100.png" width="37" height="19" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Using UnitConvert[], you can convert some arbitrary expression into any equivalent set of units. Or, more frequently, you&rsquo;ll just want to convert it to SI:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_101.png" alt="MathematicaGuide_101.png" width="223" height="20" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_102.png" alt="MathematicaGuide_102.png" width="92" height="19" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_103.png" alt="MathematicaGuide_103.png" width="172" height="21" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_104.png" alt="MathematicaGuide_104.png" width="33" height="19" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ You can also look up a huge amount of quantitative data using free form input! For example, using &ldquo;gravitational constant&rdquo;, &ldquo;earth mass&rdquo;, and &ldquo;earth radius&rdquo; in free-form input boxes, I can calculate the surface acceleration of the Earth:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_105.png" alt="MathematicaGuide_105.png" width="563" height="60" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_106.png" alt="MathematicaGuide_106.png" width="67" height="21" style="vertical-align:middle" />
+</p>
+
+<p class="Subsection">
+ Solving numerically with NSolve[] and NDSolve[]
+</p>
+
+
+
+<p class="Text">
+ As you probably know, many differential equations are not analytically solvable (and some algebraic equations are gross), so you can use Mathematica&rsquo;s built-in numerical solvers to work with these types of equations. NSolve[] works almost exactly the same as Solve[]:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_107.png" alt="MathematicaGuide_107.png" width="376" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_108.png" alt="MathematicaGuide_108.png" width="214" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ When using NDSolve[], you&rsquo;ll get a numerical &ldquo;InterpolatingFunction&rdquo; as an output:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_109.png" alt="MathematicaGuide_109.png" width="570" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_110.gif" alt="MathematicaGuide_110.gif" width="393" height="46" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ You can use this InterpolatingFunction exactly as you would a regular function:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_111.png" alt="MathematicaGuide_111.png" width="739" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_112.gif" alt="MathematicaGuide_112.gif" width="429" height="221" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubsection">
+ Application: using boundary conditions
+</p>
+
+
+
+<p class="Text">
+ As of Mathematica 10, it allows you to input Neumann and Dirichlet boundary conditions when numerically solving differential equations! For example, this is the solution to the potential throughout a metal plate with current passing through it via wires attached at the midpoints of the short end:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_113.gif" alt="MathematicaGuide_113.gif" width="1696" height="189" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_114.gif" alt="Graphics:Electrostatic potential in a current-carrying conductive plate" width="515" height="510" style="vertical-align:middle" />
+</p>
+
+<p class="Subsection">
+ Working with vectors and matrices
+</p>
+
+
+
+<p class="Text">
+ Matrices in Mathematica work the same way they do in Python, except with the changes you&rsquo;ve already seen for how vectors work. You can make matrices as lists of lists:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_115.gif" alt="MathematicaGuide_115.gif" width="169" height="39" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ There are lots of matrix operations you can do. For example, you can transpose a matrix and display it like it would be written on paper:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_116.png" alt="MathematicaGuide_116.png" width="211" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_117.png" alt="MathematicaGuide_117.png" width="47" height="32" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ You can find the eigenvectors and eigenvalues of a matrix:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_118.png" alt="MathematicaGuide_118.png" width="590" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_119.png" alt="MathematicaGuide_119.png" width="193" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ You can multiply matrices and vectors together with the &ldquo;.&rdquo; operator:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_120.png" alt="MathematicaGuide_120.png" width="54" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_121.png" alt="MathematicaGuide_121.png" width="45" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ And you can retrieve the magnitude of a vector with Norm[]:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_122.png" alt="MathematicaGuide_122.png" width="70" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_123.png" alt="MathematicaGuide_123.png" width="8" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Lots of vector calculus operations will require you to work with vectors and matrices. For example, you can take the curl of a vector field in Mathematica:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_124.png" alt="MathematicaGuide_124.png" width="210" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_125.png" alt="MathematicaGuide_125.png" width="66" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ You can also do this using esc+delx+ esc to make a nice pretty template:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_126.png" alt="MathematicaGuide_126.png" width="139" height="20" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_127.png" alt="MathematicaGuide_127.png" width="75" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Mathematica also allows for very easy coordinate changes. For example, you can take the curl of something in spherical coordinates:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_128.png" alt="MathematicaGuide_128.png" width="291" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_129.png" alt="MathematicaGuide_129.png" width="129" height="32" style="vertical-align:middle" />
+</p>
+
+<p class="Subsection">
+ Fitting functions to data
+</p>
+
+
+
+<p class="Text">
+ Although it isn&rsquo;t the program&rsquo;s primary purpose, Mathematica includes a lot of statistical manipulation functions. The most commonly used of these, in my experience, is the fitting functions LinearModelFit[] and NonLinearModelFit[]. Let&rsquo;s try these out:
+</p>
+
+
+
+<p class="Subsubsection">
+ LinearModelFit[]
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_130.gif" alt="MathematicaGuide_130.gif" width="296" height="60" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_131.png" alt="MathematicaGuide_131.png" width="621" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_132.png" alt="MathematicaGuide_132.png" width="246" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_133.png" alt="MathematicaGuide_133.png" width="224" height="27" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_134.png" alt="MathematicaGuide_134.png" width="496" height="39" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_135.gif" alt="MathematicaGuide_135.gif" width="360" height="234" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_136.png" alt="MathematicaGuide_136.png" width="345" height="39" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_137.gif" alt="MathematicaGuide_137.gif" width="360" height="214" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ We can do more complex stuff with LienarModelFit[] too, like fitting data to multiple variables:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_138.gif" alt="MathematicaGuide_138.gif" width="469" height="39" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_139.png" alt="MathematicaGuide_139.png" width="294" height="27" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Or fitting data to functions of variables:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_140.png" alt="MathematicaGuide_140.png" width="380" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_141.png" alt="MathematicaGuide_141.png" width="373" height="27" style="vertical-align:middle" />
+</p>
+
+<p class="Subsubsection">
+ NonlinearModelFit[]
+</p>
+
+
+
+<p class="Text">
+ Sometimes you get data that depends on some functional forms of variables. For example, if we considered &ldquo;noisy&rdquo; radioactive decay:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_142.gif" alt="MathematicaGuide_142.gif" width="489" height="58" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_143.gif" alt="MathematicaGuide_143.gif" width="360" height="229" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ You can fit this type of data to a model using NonlinearModelFit[] and specifying the desired form of the data along with the constants to solve for. For example, in this case, we know decay rate follows <span><span><img src="HTMLFiles/MathematicaGuide_144.png" alt="MathematicaGuide_144.png" width="44" height="19" style="vertical-align:middle" /></span></span>, so we can do:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_145.png" alt="MathematicaGuide_145.png" width="431" height="34" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_146.png" alt="MathematicaGuide_146.png" width="218" height="29" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_147.png" alt="MathematicaGuide_147.png" width="523" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_148.gif" alt="MathematicaGuide_148.gif" width="360" height="229" style="vertical-align:middle" />
+</p>
+
+<p class="Section">
+ 4. Plotting relationships and data in Mathematica 
+</p>
+
+
+
+<p class="Subsection">
+ Plotting symbolic relationships with Plot[]
+</p>
+
+
+
+<p class="Text">
+ Mathematica&rsquo;s plotting functionality is the easiest to use and most robust of any library I&rsquo;ve come across. Plot[] is your bread-and-butter function here, and can be used to plot arbitrary symbolic relationships:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_149.png" alt="MathematicaGuide_149.png" width="184" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_150.gif" alt="MathematicaGuide_150.gif" width="360" height="214" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ You can also use Plot[] with lazily-defined (:=) functions:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_151.gif" alt="MathematicaGuide_151.gif" width="305" height="81" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_152.gif" alt="MathematicaGuide_152.gif" width="360" height="214" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ You can add legends with the option PlotLegends, axes labels with AxesLabel, and many other possibilities available in the documentation.
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_153.png" alt="MathematicaGuide_153.png" width="1091" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_154.gif" alt="MathematicaGuide_154.gif" width="430" height="213" style="vertical-align:middle" />
+</p>
+
+<p class="Subsection">
+ Plotting lists with ListPlot[]
+</p>
+
+
+
+<p class="Text">
+ ListPlot[] works similarly to plot, but on lists of data rather than functional relationships. For example:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_155.png" alt="MathematicaGuide_155.png" width="619" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_156.gif" alt="MathematicaGuide_156.gif" width="437" height="246" style="vertical-align:middle" />
+</p>
+
+<p class="Subsection">
+ Other common types of plots
+</p>
+
+
+
+<p class="Text">
+ Other useful plot functions include ContourPlot[], Plot3D[], ListContourPlot[], and ListPlot3D[]. Extensive documentation is available for these functions, so I&rsquo;ll just demonstrate one of each:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_157.png" alt="MathematicaGuide_157.png" width="821" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_158.gif" alt="MathematicaGuide_158.gif" width="415" height="355" style="vertical-align:middle;" usemap="#map_158" />
+<map name="map_158">
+<area shape="rect" coords="137,223,245,115" title="0.1" nohref="" />
+<area shape="rect" coords="115,245,266,94" title="0.2" nohref="" />
+<area shape="rect" coords="99,261,283,77" title="0.3" nohref="" />
+<area shape="rect" coords="84,276,297,63" title="0.4" nohref="" />
+<area shape="rect" coords="71,289,311,49" title="0.5" nohref="" />
+<area shape="rect" coords="58,302,323,37" title="0.6" nohref="" />
+<area shape="rect" coords="46,314,336,24" title="0.7" nohref="" />
+<area shape="rect" coords="32,328,349,11" title="0.8" nohref="" />
+<area shape="rect" coords="26,334,355,5" title="0.9" nohref="" />
+</map>
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_159.png" alt="MathematicaGuide_159.png" width="698" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_160.gif" alt="MathematicaGuide_160.gif" width="420" height="343" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_161.png" alt="MathematicaGuide_161.png" width="673" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_162.gif" alt="MathematicaGuide_162.gif" width="415" height="364" style="vertical-align:middle;" usemap="#map_162" />
+<map name="map_162">
+<area shape="rect" coords="18,313,355,25" title="0.1" nohref="" />
+<area shape="rect" coords="18,342,355,5" title="0.2" nohref="" />
+</map>
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_163.png" alt="MathematicaGuide_163.png" width="1010" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/MathematicaGuide_164.gif" alt="MathematicaGuide_164.gif" width="360" height="286" style="vertical-align:middle" />
+</p>
+
+<p class="Subsection">
+ Using Manipulate[]
+</p>
+
+
+
+<p class="Text">
+ This is one of my favorite features of Mathematica: using Manipulate[], you can create interactive plots that allow you to explore the behavior of something as a function of some input variable(s). For example:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_165.png" alt="MathematicaGuide_165.png" width="406" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <script type="text/javascript" src="http://www.wolfram.com/cdf-player/plugin/v2.1/cdfplugin.js"></script>
+<script type="text/javascript">
+var cdf = new cdfplugin();
+cdf.embed('HTMLFiles/MathematicaGuide_166.cdf', 0, 0);
+</script>
+</p>
+
+<p class="Text">
+ You can do a lot of really cool things with this. For example, here&rsquo;s a plot of the equipotential lines from two charge sources: (you can adjust the sliders to adjust the magnitude of the charges and drag the positions of the charges around in the plot)
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_167.png" alt="MathematicaGuide_167.png" width="675" height="96" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <script type="text/javascript" src="http://www.wolfram.com/cdf-player/plugin/v2.1/cdfplugin.js"></script>
+<script type="text/javascript">
+var cdf = new cdfplugin();
+cdf.embed('HTMLFiles/MathematicaGuide_168.cdf', 0, 0);
+</script>
+</p>
+
+<p class="Text">
+ And here&rsquo;s a manipulable solution to the Rossler attractor (a set of chaotic differential equations) displaying the behavior of all component coordinates:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_169.gif" alt="MathematicaGuide_169.gif" width="212" height="123" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/MathematicaGuide_170.gif" alt="MathematicaGuide_170.gif" width="1416" height="354" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <script type="text/javascript" src="http://www.wolfram.com/cdf-player/plugin/v2.1/cdfplugin.js"></script>
+<script type="text/javascript">
+var cdf = new cdfplugin();
+cdf.embed('HTMLFiles/MathematicaGuide_171.cdf', 0, 0);
+</script>
+</p>
+
+
+
+
+<div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+ <a href="http://www.wolfram.com/language/" style="color:#000; text-decoration:none;">
+  <span style="color:#555555">Created with the Wolfram Language</span> 
+ </a>
+</div>
+</body>
+
+</html>
