@@ -1,12 +1,18 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - bencbartlett
 
-github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+open_source_contributions:
+  - fancompute/neuroptica
+  - att-innovate/squanch
+  - qutip/qutip
+  - NanoComp/meep
+
+personal_side_projects:
+  - bencbartlett/3D-printed-mirror-array
+  - bencbartlett/overmind 
+  - fancompute/ising-compiler
+  - bencbartlett/neural-maxwell
+  - fancompute/qpga
+  - baaahs/sparklemotion
+  - bencbartlett/creep-tasks
+  - bencbartlett/screeps-packrat
