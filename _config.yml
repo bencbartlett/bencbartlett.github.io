@@ -7,13 +7,12 @@ first_name: Ben
 middle_name: 
 last_name: Bartlett
 email: benjamincbartlett@gmail.com
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+description: 
 footer_text: 
-keywords: # add your own keywords or leave empty
+keywords: nanophotonics, quantum computing, quantum information, quantum optics, machine learning, photonic computing, optical computing, quantum optics # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: icon_small.png  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://bencbartlett.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
@@ -45,7 +44,7 @@ rss_icon: false
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 
 # Dimensions
 max_width: 800px
