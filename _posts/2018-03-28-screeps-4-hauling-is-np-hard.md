@@ -29,7 +29,7 @@ This way of compartmentalizing requests proved to be quite useful in some cases,
 
 My old transport system took a greedy approach which was simple but inflexible, needlessly separating creep roles which could be combined. [Haulers](https://github.com/bencbartlett/Overmind/blob/4b234396ee9cf44bdc57de3551e4e7cea05e9027/src/overlords/core/overlord_haul.ts) bring in energy from remote sources and put them in a dropoff structure and [suppliers](https://github.com/bencbartlett/Overmind/blob/4b234396ee9cf44bdc57de3551e4e7cea05e9027/src/overlords/core/overlord_supply.ts) take energy from storage and distribute it throughout a room. (There are also 1mineralSuppliers1 and queens which have slightly-modified supplier logic.) This is basically how they worked in pseudocode:
 
-```
+```txt
 function haulerLogic(hauler):
   if hauler has a task:
     execute the task
@@ -41,7 +41,7 @@ function haulerLogic(hauler):
       hauler.task = withdraw energy from target
 ```
 
-```
+```python
 function supplierLogic(supplier):
   if supplier has a task:
     execute the task
@@ -143,7 +143,7 @@ Referencing the image above, even if $$R_1$$ is nearly empty, `predictedAmount(R
 
 Finally, as pseudocode, here is a stripped down version of my new transporter logic. This is shown only for the `request()` case - `provide()` is similar but slightly different - and `predictedAmount()`, `predictedCarry()`, `nextAvailability()` aren't shown, but they do what they sound like. (See [TransportOverlord.ts](https://github.com/bencbartlett/Overmind/blob/55942b0db80568379394926b34bcdc2dd36b9736/src/overlords/core/overlord_transport.ts) and [LogisticsGroup.ts](https://github.com/bencbartlett/Overmind/blob/55942b0db80568379394926b34bcdc2dd36b9736/src/logistics/LogisticsGroup.ts) for the complete code.)
 
-```
+```python
 function transporterLogic(transporter):
   if transporter has a task:
     execute the task

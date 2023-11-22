@@ -3,7 +3,7 @@ layout: post
 title: "3D printed mirror array"
 date: 2021-11-11
 tags: physics math 3dprinting
-thumbnail: /assets/img/img_3009-20231121110256294.png
+thumbnail: /assets/video/mirror.webp
 typora-root-url: ../
 ---
 

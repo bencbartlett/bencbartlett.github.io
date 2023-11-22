@@ -38,7 +38,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -202,6 +202,7 @@ exclude:
   - Gemfile.lock
   - vendor
   - _pages/dropdown.md
+  - _pages/projects.md
 keep_files:
   - CNAME
   - .nojekyll
@@ -332,6 +333,7 @@ imagemagick:
     - 1400
   input_directories:
     - assets/img/
+    - assets/img/publication_preview/
   input_formats:
     - ".jpg"
     - ".jpeg"

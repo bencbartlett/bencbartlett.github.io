@@ -3,7 +3,7 @@ layout: post
 title: "Screeps #2: Interior Design"
 date: 2018-02-06
 tags: screeps
-thumbnail: /assets/img/overmind_base_planner.webp
+thumbnail: /assets/video/overmind_base_planner.webp
 typora-root-url: ../
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "Screeps #5: Evolution"
 date: 2018-08-11
 tags: screeps
-thumbnail: /assets/img/screen-shot-2018-08-07-at-7-12-14-pm.png
+thumbnail: /assets/img/overmind_traffic_manager_thumbnail.webp
 typora-root-url: ../
 
 ---
