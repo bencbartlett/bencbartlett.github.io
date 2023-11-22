@@ -3,7 +3,7 @@ layout: post
 title: "How to Mathematica: a practical guide"
 date: 2017-07-11
 tags: mathematica
-thumbnail: /assets/img/wolfram-mathematica-10.png
+thumbnail: /assets/img/mathematica-10-spikey.png
 typora-root-url: ../
 ---
 

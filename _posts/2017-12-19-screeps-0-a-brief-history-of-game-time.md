@@ -3,7 +3,7 @@ layout: post
 title: "Screeps #0: A Brief History of Game.time"
 date: 2017-12-19
 tags: screeps
-thumbnail: /assets/img/overmindlogo.png
+thumbnail: /assets/img/OvermindIcon.png
 typora-root-url: ../
 ---
 
