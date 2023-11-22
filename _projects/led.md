@@ -1,13 +1,13 @@
 ---
 layout: page
 title: LED Art
-description: a project with a background image
+description: 
 img: assets/video/baaahs_driveby_thumbnail.webp
 importance: 1
 category: fun
 ---
 
-In some of my free time I do a lot of projects involving programming LEDs! I help write some of the shader art and [code](https://github.com/baaahs/sparklemotion) that runs on [BAAAHS](https://baaahs.org/), an art car at Burning Man. Here are a couple of my favorite shaders I've written.
+In some of my free time I do a lot of projects involving programming LEDs! I help write some of the shader art and [code](https://github.com/baaahs/sparklemotion) that runs on [BAAAHS](https://baaahs.org/), an art car at Burning Man. Here are a couple of my favorite shaders I've written, and some videos of them in action on the playa!
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
@@ -19,7 +19,6 @@ In some of my free time I do a lot of projects involving programming LEDs! I hel
         <!-- <iframe width="400" height="225" src="/assets/video/baaahs_paavo.mp4" frameborder="0" allowfullscreen></iframe> -->
     </div>
 </div>
-
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include video.html path="/assets/video/baaahs_zebra.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false%}
