@@ -4,7 +4,7 @@ title: Math Animations
 permalink: /math-animations/
 description: 
 nav: true
-nav_order: 
+nav_order: 4
 tweets:
   - https://twitter.com/bencbartlett/status/1326272375332114433
   - https://twitter.com/bencbartlett/status/1287802625602117632

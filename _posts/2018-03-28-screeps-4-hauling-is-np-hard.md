@@ -190,8 +190,8 @@ I deployed this system to the public servers last week, and so far it's been wor
 
 # References
 
-[\[1\] Savelsbergh, M. W., & Sol, M. (1995). The general pickup and delivery problem. _Transportation science_, _29_(1), 17-29.](http://dis.unal.edu.co/~gjhernandezp/TOS/ROUTING/Savelsbergh_1995_The_General_Pickup_and_Delivery_Problem.pdf)
+[\[1\] Savelsbergh, M. W., & Sol, M. (1995). The general pickup and delivery problem. _Transportation science_, _29_(1), 17-29.](https://dis.unal.edu.co/~gjhernandezp/TOS/ROUTING/Savelsbergh_1995_The_General_Pickup_and_Delivery_Problem.pdf)
 
-[\[2\] Lu, Q., & Dessouky, M. (2004). An exact algorithm for the multiple vehicle pickup and delivery problem. _Transportation Science_, _38_(4), 503-514.](http://www-bcf.usc.edu/~maged/publications/MultiplePickup.pdf)
+[\[2\] Lu, Q., & Dessouky, M. (2004). An exact algorithm for the multiple vehicle pickup and delivery problem. _Transportation Science_, _38_(4), 503-514.](https://www-bcf.usc.edu/~maged/publications/MultiplePickup.pdf)
 
 [\[3\] Kümmel, M., Busch, F., & Wang, D. Z. (2016). Taxi dispatching and stable marriage. _Procedia Computer Science_, _83_, 163-170.](https://www.sciencedirect.com/science/article/pii/S1877050916301351)
