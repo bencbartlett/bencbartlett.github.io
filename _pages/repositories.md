@@ -3,6 +3,7 @@ layout: page
 permalink: /software/
 title: Software
 description: 
+hide_header: true
 nav: true
 nav_order: 3
 ---

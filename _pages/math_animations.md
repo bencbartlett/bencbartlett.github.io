@@ -2,6 +2,7 @@
 layout: page
 title: Math Animations
 permalink: /math-animations/
+hide_header: true
 description: 
 nav: true
 nav_order: 4

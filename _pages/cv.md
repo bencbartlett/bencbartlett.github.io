@@ -2,6 +2,7 @@
 layout: page
 permalink: /cv/
 title: CV
+hide_header: true
 nav: true
 nav_order: 1
 ---
@@ -20,6 +21,6 @@ toc:
 
 
 <h1><a href="/assets/pdf/Ben_Bartlett_Resume.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Resume</a></h1>
-
+<br/><br/>
 <h1><a href="/assets/pdf/Ben_Bartlett_CV.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> CV</a></h1>
 

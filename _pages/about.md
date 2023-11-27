@@ -1,6 +1,8 @@
 ---
 layout: about
 title: About
+hide_header: false
+force_show_site_title: false
 permalink: /
 subtitle: 
 
@@ -23,4 +25,4 @@ I'm currently a quantum computer architect at [PsiQuantum](https://www.psiquantu
 
 During my PhD I was an AI resident at [Google X](https://x.company/), working on an undisclosed project involving electromagnetics, machine learning, and distributed computing. Before that I earned an MS in electrical engineering from Stanford and a BS in physics and computer science from Caltech. If you're interested, here is my [resume](/assets/pdf/Ben_Bartlett_Resume.pdf)/[CV](/assets/pdf/Ben_Bartlett_CV.pdf).
 
-When not I'm trying to trick photons into thinking or making GPUs go brr, you can probably find me playing [piano](/projects/piano), making [math animations](/math-animations), doing [LED art projects](/projects/led), blogging about [technical stuff](/blog), doing random [coding projects](https://github.com/bencbartlett), or just vibing with my [cat](/assets/img/cat.jpg).
+When not I'm trying to trick photons into thinking or making GPUs go brr, you can probably find me playing [piano](/projects/piano), making [math animations](/math-animations), doing [LED art projects](/projects/led), blogging about [technical stuff](/blog), working on random [coding projects](https://github.com/bencbartlett), or just vibing with my [cat](/assets/img/cat.jpg).
