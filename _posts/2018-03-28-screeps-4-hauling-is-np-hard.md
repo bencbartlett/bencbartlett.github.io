@@ -29,7 +29,7 @@ This way of compartmentalizing requests proved to be quite useful in some cases,
 
 My old transport system took a greedy approach which was simple but inflexible, needlessly separating creep roles which could be combined. [Haulers](https://github.com/bencbartlett/Overmind/blob/4b234396ee9cf44bdc57de3551e4e7cea05e9027/src/overlords/core/overlord_haul.ts) bring in energy from remote sources and put them in a dropoff structure and [suppliers](https://github.com/bencbartlett/Overmind/blob/4b234396ee9cf44bdc57de3551e4e7cea05e9027/src/overlords/core/overlord_supply.ts) take energy from storage and distribute it throughout a room. (There are also 1mineralSuppliers1 and queens which have slightly-modified supplier logic.) This is basically how they worked in pseudocode:
 
-```txt
+```python
 function haulerLogic(hauler):
   if hauler has a task:
     execute the task
@@ -37,7 +37,7 @@ function haulerLogic(hauler):
     if hauler has energy:
       hauler.task = transfer energy to dropoff structure
     else:
-      let target = highest priority unhandled request
+      target = highest priority unhandled request
       hauler.task = withdraw energy from target
 ```
 
@@ -47,7 +47,7 @@ function supplierLogic(supplier):
     execute the task
   else:
     if supplier has energy:
-      let target = closest high-priority unhandled request
+      target = get closest high-priority unhandled request
       supplier.task = transfer energy to target
     else:
       supplier.task = obtain energy from store structure
@@ -108,8 +108,6 @@ In case it's been a while since your last algorithms class, the stable marriage 
 
 It's not too much of a stretch to replace "men" with "transporters" and "women" with "resource requests", and stable matchings are easy to compute - Gale-Shapley runs in $$\mathcal{O}(n^{2})$$ - so this approach got me excited. I started coding my logistics system based on this principle, but as always, the devil is in the details...
 
- 
-
 * * *
 
 # Part 3: The Logistics System
@@ -127,9 +125,9 @@ As you might imagine, calculating $$\frac{dq}{dt}\|_{T_i,R_j}$$ is a bit more in
 - `multiplier`: an optional factor to multiply effective resources transported to prioritize certain requests
 - `id`: a string identifier for the request; used for matching purposes
 
-To calculate $$\frac{dq}{dt}\|_{T_i,R_j}$$, we need to consider multiple possibilities of what to visit on the way to fulfilling the request. For example, an empty transporter going directly to provide resources to an upgradeSite container would have $$dq/dt = 0$$, but if it stopped by a "buffer structure" on the way, like storage or a link, it could have a large $$dq/dt$$. So $$\frac{dq}{dt}\|_{T_i,R_j}$$ gets defined as the maximum resource change per total trip time over all possible buffer structures $$B_k$$ that the transporter can visit on the way:
+To calculate $$\frac{dq}{dt}\vert_{T_i,R_j}$$, we need to consider multiple possibilities of what to visit on the way to fulfilling the request. For example, an empty transporter going directly to provide resources to an upgradeSite container would have $$dq/dt = 0$$, but if it stopped by a "buffer structure" on the way, like storage or a link, it could have a large $$dq/dt$$. So $$\frac{dq}{dt}\vert_{T_i,R_j}$$ gets defined as the maximum resource change per total trip time over all possible buffer structures $$B_k$$ that the transporter can visit on the way:
 
-$$\frac{dq}{dt}\|_{T_i,R_j}= \max_k \frac{\Delta q_k}{d_{T_i, B_k} + d_{B_k, R_j}},$$
+$$\frac{dq}{dt}\vert_{T_i,R_j}= \max_k \frac{\Delta q_k}{d_{T_i, B_k} + d_{B_k, R_j}},$$
 
 where $$\Delta q_k$$ is the maximum of (resources/ or capacity in transporter, \|request amount\|, buffer resource or capacity) and $$B_0$$ is defined to be the target, i.e. going directly there without stopping by a buffer on the way. If the transporter is matched to the target, its task is forked to visit the optimal buffer first. This logic is implemented in [`LogisticsGroup.bufferChoices()`](https://github.com/bencbartlett/Overmind/blob/55942b0db80568379394926b34bcdc2dd36b9736/src/logistics/LogisticsGroup.ts#L295).
 
@@ -151,37 +149,38 @@ function transporterLogic(transporter):
     transporter.task = getTask(transporter)
 
 function getTask(transporter):
-  let assignment = LogisticsGroup.matching()\[transporter\]
+  assignment = LogisticsGroup.matching()[transporter]
 
 function LogisticsGroup.matching():
-  let tPrefs, rPrefs = {}
+  tPrefs = {}
+  rPrefs = {}
   for each transporter:
-    tPrefs\[transport\] = sort requests by dqdt(transport, request)
+    tPrefs[transport] = sort requests by dqdt(transport, request)
   for each request:
-    rPrefs\[request\] = sort transporters by dqdt(transport, request)
-  let matching = stable matching from GaleShapley(tPrefs, rPrefs)
-  return matching // keys: transporters, values: assigned requests
+    rPrefs[request] = sort transporters by dqdt(transport, request)
+  matching = gale_shapley_matching(tPrefs, rPrefs)
+  return matching  # keys: transporters, values: assigned requests
 
 function dqdt(transporter, request):
-  // only shown for request() case, provide() is slightly different
-  let amount = predictedAmount(transporter, request)
-  let carry = predictedCarry(transporter)
-  let \[ticksUntilFree, newPos\] = nextAvailability(transporter)
-  let choices = \[\] // objects containing dq, dt, target
-  choices.push({
-    dq: min(amount, carry\[resourceType\]),
+  # only shown for request() case, provide() is slightly different
+  amount = predictedAmount(transporter, request)
+  carry = predictedCarry(transporter)
+  [ticksUntilFree, newPos] = nextAvailability(transporter)
+  choices = []  # objects containing dq, dt, target
+  choices.append({
+    dq: min(amount, carry[resourceType]),
     dt: ticksUntilFree + distance(newPos, request.target),
     target: request.target
   })
   for each buffer:
-    choices.push({
+    choices.append({
       dq: min(amount, transporter.carryCapacity, 
-              buffer.store\[resourceType\]),
+              buffer.store[resourceType]),
       dt: ticksUntilFree + distance(newPos, buffer) 
             + distance(buffer, requesttarget),
       target: buffer
     })
-  return choice with best dq/dt
+  return (choice with best dq/dt)
 ```
 
 I deployed this system to the public servers last week, and so far it's been working really well. I seem to be using about 30% fewer creeps than my previous system used, and the total CPU impact is virtually unchanged (although it can be a little spikier on ticks where lots of colonies need to compute matchings at once). Overall, I'm really happy with how my new logistics system turned out!
