@@ -1,9 +1,9 @@
 ---
 layout: page
 title: LED Art
-description: 
+description: LED art, GLSL shaders, and lighting control systems for a Burning Man art car
 img: assets/video/baaahs_driveby_thumbnail.webp
-importance: 1
+importance: 3
 category: fun
 ---
 

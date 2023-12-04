@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Piano
-description: 
+description: Recordings of classical piano pieces
 img: assets/img/piano_sfcm_concert.jpg
-importance: 1
+importance: 6
 category: fun
 ---
 

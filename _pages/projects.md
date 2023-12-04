@@ -1,11 +1,11 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: Random projects I've worked on
 hide_header: true
-nav: false
-nav_order: 2
+nav: true
+nav_order: 5
 display_categories: [work, fun]
 horizontal: false
 ---

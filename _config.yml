@@ -201,7 +201,6 @@ exclude:
   - Gemfile.lock
   - vendor
   - _pages/dropdown.md
-  - _pages/projects.md
 keep_files:
   - CNAME
   - .nojekyll
@@ -338,7 +337,7 @@ imagemagick:
     - ".jpeg"
     - ".png"
     - ".tiff"
-    - ".gif"
+    # - ".gif"
     # - ".webp"
   output_formats:
     webp: "-resize 800x"
