@@ -5,6 +5,7 @@ date: 2018-02-06
 tags: screeps
 thumbnail: /assets/video/overmind_base_planner.webp
 typora-root-url: ../
+redirect_from: /blog/2018/02/06/screeps-2-interior-design/
 ---
 
 Now that the dust has settled following the recent [massive rewrite of my AI](https://bencbartlett.wordpress.com/2018/01/15/screeps-1-overlord-overload/), I've been able to turn my attention to adding more features to Overmind. Here's a few of the things I've been working on...

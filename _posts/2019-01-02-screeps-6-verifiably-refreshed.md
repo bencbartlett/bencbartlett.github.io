@@ -5,6 +5,7 @@ date: 2019-01-02
 tags: screeps mathematica
 thumbnail: /assets/img/Screen-Shot-2019-01-02-at-11.34.44-AM.png
 typora-root-url: ../
+redirect_from: /blog/2019/01/02/screeps-6-verifiably-refreshed/
 ---
 
 ## Assimilation (part 1): verification

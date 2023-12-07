@@ -5,6 +5,7 @@ date: 2021-11-11
 tags: physics math 3dprinting
 thumbnail: /assets/video/mirror_thumbnail.webp
 typora-root-url: ../
+redirect_from: /blog/2021/11/11/3d-printed-mirror-array/
 ---
 
 I recently got engaged to the wonderful person holding the hexagonal mirror thingy in the photo below. We're both huge nerds and I wanted to do something unique for a proposal, so I designed and 3D printed a mirror array to ask the question for me. The mirrors are angled so that just before sunset on our 8th anniversary, it reflects the light from the setting sun onto the ground to spell out "MARRY ME?"

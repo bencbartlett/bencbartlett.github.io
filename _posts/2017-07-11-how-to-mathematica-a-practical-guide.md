@@ -5,6 +5,7 @@ date: 2017-07-11
 tags: mathematica
 thumbnail: /assets/img/mathematica-10-spikey.png
 typora-root-url: ../
+redirect_from: /blog/2017/07/11/how-to-mathematica-a-practical-guide/
 ---
 
 A few months ago, I gave an "upperclassman workshop" to some of my housemates at Caltech on how to use Mathematica, specifically for use in problem sets. Mathematica is a mindbogglingly complex and expansive piece of software, but (at least for undergraduate physics curricula) there's only a small subset of it that you need to know in order for it to be useful on problem sets. I try to cover all of these important features in my guide, along with some neat examples of things you might not have realized can be useful. The guide is available as a Mathematica notebook [here](/assets/mathematica/MathematicaGuide.nb), or as a PDF below.

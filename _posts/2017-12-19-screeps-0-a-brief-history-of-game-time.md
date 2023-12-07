@@ -5,6 +5,7 @@ date: 2017-12-19
 tags: screeps
 thumbnail: /assets/img/OvermindIcon.png
 typora-root-url: ../
+redirect_from: /blog/2017/12/19/screeps-0-a-brief-history-of-game-time/
 ---
 
 ## Screeps: like Starcraft at 0.001% speed

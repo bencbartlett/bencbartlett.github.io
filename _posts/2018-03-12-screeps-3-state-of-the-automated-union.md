@@ -5,7 +5,7 @@ date: 2018-03-12
 tags: screeps
 thumbnail: /assets/img/screen-shot-2018-03-11-at-5-51-30-pm.png
 typora-root-url: ../
-
+redirect_from: /blog/2018/03/12/screeps-3-state-of-the-automated-union/
 ---
 
 _This will be a relatively short post. I was originally planning on the main topic of this post to be my overhauled logistics system, but I have a **lot** to say about that. It's easily one of the coolest things I've implemented in Screeps, so I'm giving it its own dedicated post - expect to hear from me again later this week!_

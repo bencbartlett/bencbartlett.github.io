@@ -5,7 +5,7 @@ date: 2018-08-11
 tags: screeps
 thumbnail: /assets/img/overmind_traffic_manager_thumbnail.webp
 typora-root-url: ../
-
+redirect_from: /blog/2018/08/11/screeps-5-evolution/
 ---
 
 Most of my previous posts have focused on a single aspect of my bot development. This is not one of those posts.

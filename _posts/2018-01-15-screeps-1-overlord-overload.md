@@ -5,6 +5,7 @@ date: 2018-01-15
 tags: screeps
 thumbnail: /assets/img/aidiagram.png
 typora-root-url: ../
+redirect_from: /blog/2018/01/15/screeps-1-overlord-overload/
 ---
 
 In [my last post](https://bencbartlett.wordpress.com/2017/12/19/screeps-0-a-brief-history-of-game-time/) I mentioned I'd be rewriting my Screeps AI. And what a rewrite this has been. After 8547 additions and 9953 deletions over the last few commits, I've completely overhauled a huge amount of how my AI works. At first, there wasn't any way to do this incrementally, the only strategy being "turn it off and see what breaks" and at times I felt like I was wading through the compiler errors like a fat mining creep wading through a swamp: ![Screen Shot 2017-12-26 at 5.55.40 PM](/assets/img/screen-shot-2017-12-26-at-5-55-40-pm.png){:class="img-fluid rounded z-depth-0"}

@@ -5,6 +5,7 @@ description: Cooperative swarm intelligence for a multiplayer programming game
 img: assets/img/overmind_screenshot.png
 importance: 1
 category: fun
+redirect_from: /blog/category/screeps/
 ---
 
 

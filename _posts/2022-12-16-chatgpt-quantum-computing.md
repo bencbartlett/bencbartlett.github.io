@@ -5,6 +5,7 @@ date: 2022-12-06
 tags: physics ml
 thumbnail: /assets/img/screen-shot-2022-12-06-at-1.11.52-pm.png
 typora-root-url: ../
+redirect_from: /blog/2022/12/06/teaching-chatgpt-to-do-quantum-computing/
 ---
 
 You have probably seen some of the things that you can do with OpenAI's new [ChatGPT](https://chat.openai.com/chat#) which was released last week: this unnervingly human-like language model can [invent a fictional language](https://maximumeffort.substack.com/p/i-taught-chatgpt-to-invent-a-language), [emulate a virtual machine](https://www.engraved.blog/building-a-virtual-machine-inside/), and [debug code for you](https://twitter.com/amasad/status/1598042665375105024).

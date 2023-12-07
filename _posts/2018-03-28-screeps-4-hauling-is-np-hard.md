@@ -5,6 +5,7 @@ date: 2018-03-28
 tags: screeps
 thumbnail: /assets/img/stablematching1.png
 typora-root-url: ../
+redirect_from: /blog/2018/03/28/screeps-4-hauling-is-np-hard/
 ---
 
 Logistics - the problem of efficiently transporting resources - is one of the most interesting and deepest problems in Screeps. (And it's probably the single part of the game I've spent the most time thinking about.)
