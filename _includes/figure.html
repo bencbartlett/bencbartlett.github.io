@@ -4,13 +4,16 @@
 
   <picture>
     {% if site.imagemagick.enabled %}
+    {% unless include.path contains '.webp' %}
     {% for i in site.imagemagick.widths -%}
       <source
+        type="image/webp"
         class="responsive-img-srcset"
         media="(max-width: {{ i }}px)"
         srcset="{{ img_path | relative_url }}-{{ i }}.webp"
       />
     {% endfor -%}
+    {% endunless %}
     {% endif %}
 
     <!-- Fallback to the original file -->
