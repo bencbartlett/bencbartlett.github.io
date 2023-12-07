@@ -17,7 +17,7 @@ I was a very active Screeps player from 2017-2020 and wrote the most popular ope
 </div>
 
 
-Screeps is a really fascinating game with a tremendous amount of technical depth to it, prompting you to explore sub-problems from fast pathfinding algorithms and matrix convolutions to logisitical routing algorithms. I wrote a series of very technical [blog posts](/blog/tag/screeps) dicussing a lot of the design decisions behind Overmind. You can read them here:
+Screeps is a really fascinating game with a tremendous amount of technical depth to it, prompting you to explore sub-problems ranging from fast pathfinding algorithms and matrix convolutions to logisitical routing algorithms. I wrote a series of very technical [blog posts](/blog/tag/screeps) dicussing a lot of the design decisions behind Overmind. You can read them here:
 
 <div class="table-responsive">
   <table class="table table-sm table-borderless">

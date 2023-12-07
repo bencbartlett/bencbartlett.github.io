@@ -216,8 +216,11 @@ blockquote {
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
-  opacity: 0.95;
+  backdrop-filter: blur(9px);
+  background-color: var(--global-navbar-color);
+/*  var(--global-bg-color); */
+/*  rgba($white-color, 0.0);*/
+  opacity: 0.97;
 }
 
 .navbar .dropdown-menu {
