@@ -2,7 +2,7 @@
 layout: page
 title: Fusion reactor
 description: Designing an inertial electrostatic confinement fusion reactor and doing some fun experiments in it
-img: assets/img/fusion_reactor/07-18-2009.jpeg
+img: assets/img/fusion_reactor/07-18-2009.jpg
 importance: 2
 category: fun
 ---
@@ -11,17 +11,17 @@ During middle and high school, I built a variation on the design for a [Farnswor
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/fusion_reactor/07-18-2009.jpeg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/fusion_reactor/07-18-2009.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
-    One of the first runs I did with the fusion reactor (with an air backfill, so no fusion was produced). The original reactor design had a toroidal accelerator grid.
+    One of the first runs I did with the fusion reactor (this picture was taken with an air backfill, so no fusion was produced in this run). The original reactor design had a toroidal accelerator grid.
 </div>
 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/fusion_reactor/DSC00256.jpeg" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/fusion_reactor/DSC00256.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -31,7 +31,7 @@ During middle and high school, I built a variation on the design for a [Farnswor
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/fusion_reactor/DSC00295.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/fusion_reactor/DSC00295.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -41,7 +41,7 @@ During middle and high school, I built a variation on the design for a [Farnswor
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/fusion_reactor/DSC00355.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/fusion_reactor/DSC00355.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -51,7 +51,7 @@ During middle and high school, I built a variation on the design for a [Farnswor
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/fusion_reactor/DSC00520.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/fusion_reactor/DSC00520.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -61,7 +61,7 @@ During middle and high school, I built a variation on the design for a [Farnswor
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/fusion_reactor/DSC04249.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/fusion_reactor/DSC04249.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -71,7 +71,7 @@ During middle and high school, I built a variation on the design for a [Farnswor
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/fusion_reactor/fusion_run_4.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/fusion_reactor/fusion_run_4.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -81,7 +81,7 @@ During middle and high school, I built a variation on the design for a [Farnswor
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/fusion_reactor/DSC04262.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/fusion_reactor/DSC04262.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
@@ -91,11 +91,11 @@ During middle and high school, I built a variation on the design for a [Farnswor
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/fusion_reactor/magnet.JPG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/fusion_reactor/magnet.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
 <div class="caption">
-    You can also apply a magnet to the outside of the chamber to pull the charged plasma toward the edge.
+    You can also use a magnet on the outside of the chamber to pull the charged plasma toward the edge.
 </div>
 
 
