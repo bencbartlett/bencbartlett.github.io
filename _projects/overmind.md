@@ -14,6 +14,7 @@ Screeps is a [multiplayer strategy game for programmers](https://screeps.com/) w
 I was a very active Screeps player from 2017-2020 and wrote the most popular open-source bot for the game, [Overmind](https://github.com/bencbartlett/Overmind), about 40k lines of TypeScript. At one point about a quarter of the player base was using my code, and I started a [server-wide war](https://web.archive.org/web/20210730202852/https://screepsworld.com/2019/03/the-unseen-war-purifiers-ncps-and-open-source-development/) in the game when I added the ability for all players running my codebase to automatically cooperate, a capability that many players saw as an existential threat.
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
 {% include repository/repo.html repository="bencbartlett/overmind" %}
+{% include repository/repo.html repository="bencbartlett/overmind-rl" %}
 </div>
 
 
