@@ -59,7 +59,7 @@ Now I needed to figure out how to couple the rings together. The servo and slip 
         {% include figure.html path="/assets/img/gyroled/scaled/servo_mount.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.html path="/assets/img/gyroled/scaled/servo_mount_printing_h264.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false%}
+        {% include video.html path="/assets/img/gyroled/scaled/servo_mount_printing.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false%}
     </div>
 </div>
 
@@ -70,7 +70,7 @@ Now I needed to figure out how to couple the rings together. The servo and slip 
 I 3D printed these couplers in strong, dense plastic, then sanded the aluminum rings and plastic at the contact points and JB-welded them together, keeping them pressed with grips. The completed structural assembly could freely rotate:
 
 <div style="display: flex; justify-content: center;">
-{% include video.html path="/assets/img/gyroled/scaled/completed_frame_h264.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false%}
+{% include video.html path="/assets/img/gyroled/scaled/completed_frame.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false%}
 </div>
 
 Next it was time to add the LEDs! I bought a bunch of SK6812 RGBW strips, which have an additional white channel in addition to the normal red, green, and blue channels. I figured since this totem was going to be sound-reactive, it would be nice to have an additional channel to play with for sound-reactive accent effects, so I could leave RGB underneath for the normal patterns it would display.
@@ -95,7 +95,7 @@ Each ring had about 20-30 joints which needed to be soldered, so I connected mos
 By this point, I had been working on this project for about a month, and a really exciting moment was when I finally got to turn on the lights and servos!
 
 <div style="display: flex; justify-content: center;">
-{% include video.html path="/assets/img/gyroled/scaled/first_light_h264.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false%}
+{% include video.html path="/assets/img/gyroled/scaled/first_light.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false%}
 </div>
 
 However, I soon found a problem with my existing setup: I couldn’t drive the lights and servos at maximum power. I had been using the 12V batteries for my [burning man bike](https://www.reddit.com/r/BurningMan/comments/wtdw17/finished_making_my_playa_bike/) to power the totem, and I had a large buck converter which stepped the voltage from 12V down to 5V just before injecting it into the outermost ring. However, at 5V, the inherent $$\sim0.5\Omega$$ resistance of the slip rings was causing too large of a voltage drop across the rotating joint, so the innermost rings were turning off entirely, unless I severely limited the LED brightness and servo speed. To fix this, I changed the design to running the power lines at 12V, and installed a bunch of tiny buck converters which locally step down the voltage at each ring.
@@ -135,10 +135,10 @@ I 3D printed the mount/battery holder in the same plastic I used for the servo/s
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.html path="/assets/img/gyroled/scaled/timelapse_h264.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+        {% include video.html path="/assets/img/gyroled/scaled/timelapse.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.html path="/assets/img/gyroled/scaled/printing_fast_h264.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+        {% include video.html path="/assets/img/gyroled/scaled/printing_fast.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
     </div>
 </div>
 
@@ -177,7 +177,7 @@ Since the noise level at EDC can vary a lot (how close you are to speakers, what
 Another feature I am hoping to complete on the RV ride down to Nevada is automatic beat drop detection! The beat heuristics are written to a cyclic buffer which stores about 60 seconds of context. If the totem detects that there hasn’t been beats for a few bars, it assumes that the song has entered a bridge and that a big drop will follow the end of the bridge. So the next beat it detects will cause the totem to freak out, setting motors to max speeds, strobing lights, etc.
 
 <div style="display: flex; justify-content: center;">
-    {% include video.html path="/assets/img/gyroled/scaled/beat_sync_h264.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+    {% include video.html path="/assets/img/gyroled/scaled/beat_sync.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
 </div>
 
 After I was happy with the hardware of the controller and tested it to see that it could produce a convincing music-reactive response, I finalized the design of the controller and integrated it onto a solder board (which is like a breadboard but permanent since components are soldered to the board).
@@ -196,7 +196,7 @@ If you’ve made it to this point in this blog post, I hope you’re still inter
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.html path="/assets/img/gyroled/scaled/gyroled_h264.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+        {% include video.html path="/assets/img/gyroled/scaled/gyroled.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="/assets/img/gyroled/scaled/long_exposure.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
@@ -204,13 +204,13 @@ If you’ve made it to this point in this blog post, I hope you’re still inter
 </div>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.html path="/assets/img/gyroled/scaled/initial_beatsync_version_h264.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+        {% include video.html path="/assets/img/gyroled/scaled/initial_beatsync_version.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.html path="/assets/img/gyroled/scaled/fastboi_h264.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+        {% include video.html path="/assets/img/gyroled/scaled/fastboi.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.html path="/assets/img/gyroled/scaled/mami_h264.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+        {% include video.html path="/assets/img/gyroled/scaled/mami.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
     </div>
 </div>
 
