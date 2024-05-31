@@ -18,6 +18,17 @@ Totems are more than just functional items though — they can be portable artis
     <iframe width="486" height="864" src="https://www.youtube.com/embed/9w6D3aODnhw" title="gyroled demo 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.html path="/assets/img/gyroled/scaled/closeup.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.html path="/assets/img/gyroled/scaled/circuit_grounds_2.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.html path="/assets/img/gyroled/scaled/fireworks.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+    </div>
+</div>
 
 When I was first planning this out, some of the first questions I needed to answer were:
 
@@ -215,3 +226,37 @@ If you’ve made it to this point in this blog post, I hope you’re still inter
 </div>
 
 I had a ton of fun building this project and I’m so excited to get to test it out under the electric sky!
+
+
+### Updates: some post-EDC action shots!
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.html path="/assets/img/gyroled/scaled/circuit_grounds_1.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.html path="/assets/img/gyroled/scaled/fireworks.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.html path="/assets/img/gyroled/scaled/circuit_grounds_2.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+    </div>
+</div>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.html path="/assets/img/gyroled/scaled/kinetic_field_1.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.html path="/assets/img/gyroled/scaled/jason_carrying_totem.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/img/gyroled/scaled/rainbow_bridge.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.html path="/assets/img/gyroled/scaled/closeup.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/img/gyroled/scaled/me_and_afik.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+
