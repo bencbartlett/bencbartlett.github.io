@@ -152,11 +152,11 @@ To mount the rotating apparatus, I bought a double-thickness version of the larg
 I 3D printed the mount/battery holder in the same plastic I used for the servo/slip ring couplers, with some white plastic for accents:
 
 <div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-md-8 mt-3 mt-md-0">
         <video style="width:100%" src="/assets/img/gyroled/scaled/timelapse.mp4" controls=""></video>
         <!-- {% include video.html path="/assets/img/gyroled/scaled/timelapse.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %} -->
     </div>
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-md-4 mt-3 mt-md-0">
         <video style="width:100%" src="/assets/img/gyroled/scaled/printing_fast.mp4" controls=""></video>
         <!-- {% include video.html path="/assets/img/gyroled/scaled/printing_fast.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %} -->
     </div>
@@ -164,13 +164,16 @@ I 3D printed the mount/battery holder in the same plastic I used for the servo/s
 
 
 
-<div style="display: flex; justify-content: center;">
+<!-- <div style="display: flex; justify-content: center;">
     {% include figure.html path="/assets/img/gyroled/scaled/completed_holder.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-</div>
+</div> -->
 
 The battery fit in the case perfectly! I bonded the stationary ring to the mount using some trusty JB-weld and finally got to see this thing upright!
 
 <div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="/assets/img/gyroled/scaled/completed_holder.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="/assets/img/gyroled/scaled/bonding_to_frame.png" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
@@ -205,10 +208,6 @@ Another feature I am hoping to complete on the RV ride down to Nevada is automat
 
 After I was happy with the hardware of the controller and tested it to see that it could produce a convincing music-reactive response, I finalized the design of the controller and integrated it onto a solder board (which is like a breadboard but permanent since components are soldered to the board).
 
-<!-- <div style="display: flex; justify-content: center;">
-	{% include figure.html path="/assets/img/gyroled/scaled/solder_board.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-</div> -->
-
 Since the controller would be on a pole high in the air, I didn’t have a physical way to interact with it, so I also wrote a small iOS app to communicate with the controller via Bluetooth to be able to change the shader/servo speeds/brightness/etc. I spent a day developing this and was so excited to turn it on that when I put the headless controller back on the totem and plugged it in to the battery, I accidentally plugged ground into 12V input and 12V into ground and fried the entire controller. (A few hours of soldering another controller later, I carefully plugged it in and was very excited to see that is basically worked out of the box!)
 
 
@@ -228,11 +227,11 @@ Since the controller would be on a pole high in the air, I didn’t have a physi
 If you’ve made it to this point in this blog post, I hope you’re still interested, so here’s a collection of action shots:
 
 <div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-md-7 mt-3 mt-md-0">
         <video style="width:100%" src="/assets/img/gyroled/scaled/gyroled.mp4" controls=""></video>
         <!-- {% include video.html path="/assets/img/gyroled/scaled/gyroled.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %} -->
     </div>
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-md-5 mt-3 mt-md-0">
         {% include figure.html path="/assets/img/gyroled/scaled/long_exposure.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
