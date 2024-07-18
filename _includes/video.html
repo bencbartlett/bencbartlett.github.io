@@ -6,6 +6,8 @@
 
   <video
   src="{% if include.cache_bust %}{{ include.path | relative_url | bust_file_cache }}{% else %}{{ include.path | relative_url }}{% endif %}"
+    {% if include.style %}style="{{ include.style }}"
+    {% else %}
     {% if include.class %}class="{{ include.class }}"{% endif %}
     {% if include.width %}width="{{ include.width }}"{% else %}width="auto"{% endif %}
     {% if include.height %}height="{{ include.height }}"{% else %}height="auto"{% endif %}
@@ -13,6 +15,7 @@
     {% if include.min-height %}min-height="{{ include.min-height }}"{% endif %}
     {% if include.max-width %}max-width="{{ include.max-width }}"{% endif %}
     {% if include.max-height %}height="{{ include.max-height }}"{% endif %}
+    {% endif %}
     {% if include.title %}title="{{ include.title }}"{% endif %}
     {% if include.alt %}alt="{{ include.alt }}"{% endif %}
     {% if include.autoplay %}autoplay{% endif %}
