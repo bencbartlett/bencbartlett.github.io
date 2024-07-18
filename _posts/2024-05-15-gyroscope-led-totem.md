@@ -163,11 +163,6 @@ I 3D printed the mount/battery holder in the same plastic I used for the servo/s
 </div>
 
 
-
-<!-- <div style="display: flex; justify-content: center;">
-    {% include figure.html path="/assets/img/gyroled/scaled/completed_holder.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-</div> -->
-
 The battery fit in the case perfectly! I bonded the stationary ring to the mount using some trusty JB-weld and finally got to see this thing upright!
 
 <div class="row mt-3">
@@ -220,18 +215,14 @@ Since the controller would be on a pole high in the air, I didn’t have a physi
     </div>
 </div>
 
-<!-- <div style="display: flex; justify-content: center;">
-	{% include figure.html path="/assets/img/gyroled/scaled/app_screenshot.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-</div> -->
-
 If you’ve made it to this point in this blog post, I hope you’re still interested, so here’s a collection of action shots:
 
 <div class="row mt-3">
-    <div class="col-md-7 mt-3 mt-md-0">
+    <div class="col-md-5 mt-3 mt-md-0">
         <video style="width:100%" src="/assets/img/gyroled/scaled/gyroled.mp4" controls=""></video>
         <!-- {% include video.html path="/assets/img/gyroled/scaled/gyroled.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %} -->
     </div>
-    <div class="col-md-5 mt-3 mt-md-0">
+    <div class="col-md-7 mt-3 mt-md-0">
         {% include figure.html path="/assets/img/gyroled/scaled/long_exposure.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
     </div>
 </div>
@@ -263,9 +254,15 @@ I had a ton of fun building this project and I’m so excited to get to test it 
         <video style="width:100%" src="/assets/img/gyroled/scaled/fireworks.mp4" controls=""></video>
         <!-- {% include video.html path="/assets/img/gyroled/scaled/fireworks.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %} -->
     </div>
+</div>
+<div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         <video style="width:100%" src="/assets/img/gyroled/scaled/circuit_grounds_2.mp4" controls=""></video>
         <!-- {% include video.html path="/assets/img/gyroled/scaled/circuit_grounds_2.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %} -->
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <video style="width:100%" src="/assets/img/gyroled/scaled/closeup.mp4" controls=""></video>
+        <!-- {% include video.html path="/assets/img/gyroled/scaled/closeup.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %} -->
     </div>
 </div>
 <div class="row mt-3">
@@ -276,10 +273,6 @@ I had a ton of fun building this project and I’m so excited to get to test it 
     <div class="col-sm mt-3 mt-md-0">
         <video style="width:100%" src="/assets/img/gyroled/scaled/jason_carrying_totem.mp4" controls=""></video>
         <!-- {% include video.html path="/assets/img/gyroled/scaled/jason_carrying_totem.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %} -->
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <video style="width:100%" src="/assets/img/gyroled/scaled/closeup.mp4" controls=""></video>
-        <!-- {% include video.html path="/assets/img/gyroled/scaled/closeup.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=false %} -->
     </div>
 </div>
 <div class="row mt-3">
